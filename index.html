@@ -76,6 +76,7 @@ var codescouleurs=["#FFFFFF","#FF0000","#00FF00","#0000FF","#FFFF00","#FF00FF","
 var couleur=0;
 
 function possible(sommet,couleur){
+    if (couleur==0) return true;
     var voiz=voisins[sommet];
     for(var i=0;i<voiz.length;i++){
         if (couleurs[voiz[i]]==couleur) return false;
